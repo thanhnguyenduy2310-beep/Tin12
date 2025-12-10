@@ -1,0 +1,91 @@
+/* Container chính */
+#bg2{
+    background-color: azure;
+    max-width: 960px; 
+    margin: 75px auto;
+    border-radius: 15px;
+    padding: 30px;
+}
+.containers {
+    display: flex; 
+    max-width: 940px; 
+    margin: 0 auto; 
+    padding-right: 20px;
+    padding-left: 0;
+    gap: 20px
+}
+.sidebar {
+    border-right: 1px solid #eee;
+}
+.menu{
+    list-style: none;
+    font-family:'Times New Roman', Times, serif
+}
+/* Phần nội dung chính (Các mẫu website) */
+.main-content {
+    flex-grow: 1; 
+    padding-left: 20px;
+}
+/* Lưới 3 cột trong Main Content */
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+} 
+.template-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+.template-item:hover {
+    box-shadow: 15px 15px 15px rgba(11, 10, 10, 0.1);
+}
+.template-item img {
+    max-width: 200px;
+    max-height: 300px;
+    display: block;
+}
+.template-info {
+    padding: 10px;
+    text-align: left;
+}
+.template-info p {
+    font-weight: bold;
+    color: #4CAF50; 
+    margin-bottom: 5px;
+    margin-top: 0px;
+    font-size: 110%;
+    color: rgb(63, 63, 63)
+}
+.template-actions{
+    margin-top: -10px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 10px 10px 10px;
+}
+.template-actions button {
+    border: none;
+    max-height: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    background-color: rgb(28, 62, 124);
+}
+.template-actions button:hover {
+    background-color: rgb(9, 33, 46);
+}
+.template-actions .btn-view {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+}
+.template-actions .btn-detail {
+    color: #cdcccc;   
+}
+.template-actions .btn-detail:hover {
+    color: #ececec;
+}

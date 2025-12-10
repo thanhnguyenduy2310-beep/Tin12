@@ -1,0 +1,69 @@
+body{
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-position: center bottom;
+}
+.container{
+    max-width: 960px;
+    margin: 0px auto;
+}
+#header{
+    background-position-y: -100px;
+    background-color: azure;
+    margin: -8;
+    padding: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+#logo img{
+    max-width: 70px;
+    height: auto;
+    position: static;
+}
+#main-menu{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#main-menu li{
+    position: relative;
+}
+#main-menu li a{
+    color: black;
+    display: block;
+    padding: 25px 30px;
+    text-decoration: none;
+    font-size: 110%;
+    font-family: cursive;
+    transition: all 0.25s ease;
+}
+#main-menu li a:hover{
+    font-size: 125%;
+}
+#main-menu ul.sub-menu{
+    position: absolute;
+    background-color: azure;
+    width: 200px;
+    list-style: none;
+    padding: 0;
+    display: none;
+    transition: all 0.25s ease;
+}
+#main-menu li:hover ul.sub-menu{
+    display: block;
+}
+#main-menu ul.sub-menu a{
+    padding: 8px 15px;
+    border-top: 1px solid rgb(0,0,0);
+}
+#main-menu ul.sub-menu a:last-child{
+    border-bottom: 1px solid rgb(0,0,0);
+}
+#main-menu ul.sub-menu li:hover a{
+     border-top: 1px solid rgb(179, 179, 179);
+     font-size: 115%;
+}
